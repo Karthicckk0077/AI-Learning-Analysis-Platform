@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Learning Analysis Platform</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="/css/style.css">
+
+</head>
+
+<body>
+
+<!-- ===============================
+        Animated Background
+================================ -->
+
+<div class="background">
+
+    <div class="circle circle1"></div>
+
+    <div class="circle circle2"></div>
+
+    <div class="circle circle3"></div>
+
+</div>
+
+<!-- ===============================
+        Main Container
+================================ -->
+
+<div class="container">
+
+    <!-- ===============================
+                Hero
+    ================================ -->
+
+    <header class="hero">
+
+        <div class="hero-logo">
+
+            🤖
+
+        </div>
+
+        <h1>
+
+            AI Learning Analysis Platform
+
+        </h1>
+
+        <p>
+
+            Compare Teacher Material with Student Understanding using Artificial Intelligence
+
+        </p>
+
+    </header>
+
+    <!-- ===============================
+            Upload Section
+    ================================ -->
+
+    <section class="glass-card">
+
+        <form id="uploadForm">
+
+            <div class="upload-grid">
+
+                <!-- Teacher -->
+
+                <div class="upload-card">
+
+                    <div class="upload-icon">
+
+                        👨‍🏫
+
+                    </div>
+
+                    <h2>
+
+                        Teacher Material
+
+                    </h2>
+
+                    <p>
+
+                        Upload PDF, DOCX or TXT file
+
+                    </p>
+
+                    <label class="upload-button">
+
+                        📄 Choose File
+
+                        <input
+                                type="file"
+                                id="teacherFile"
+                                accept=".pdf,.doc,.docx,.txt"
+                                hidden>
+
+                    </label>
+
+                    <div
+                            id="teacherFileName"
+                            class="file-name">
+
+                        No file selected
+
+                    </div>
+
+                </div>
+
+                <!-- Student -->
+
+                <div class="upload-card">
+
+                    <div class="upload-icon">
+
+                        👨‍🎓
+
+                    </div>
+
+                    <h2>
+
+                        Student Material
+
+                    </h2>
+
+                    <p>
+
+                        Upload PDF, DOCX or TXT file
+
+                    </p>
+
+                    <label class="upload-button">
+
+                        📄 Choose File
+
+                        <input
+                                type="file"
+                                id="studentFile"
+                                accept=".pdf,.doc,.docx,.txt"
+                                hidden>
+
+                    </label>
+
+                    <div
+                            id="studentFileName"
+                            class="file-name">
+
+                        No file selected
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- ===============================
+        AI Prompt
+================================ -->
+
+            <div class="prompt-box">
+
+                <label for="prompt">
+
+                    ✨ Additional AI Instructions
+
+                </label>
+
+                <textarea
+                        id="prompt"
+                        placeholder="Examples:
+
+• Compare teacher and student understanding
+
+• Find missing concepts
+
+• Suggest revision topics
+
+• Evaluate exam readiness
+
+• Give personalized recommendations
+
+• Identify weak areas"></textarea>
+
+            </div>
+
+            <!-- Analyze Button -->
+
+            <button
+                    type="submit"
+                    class="analyze-button">
+
+                🚀 Analyze Learning
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ===============================
+                AI REPORT
+    ================================ -->
+
+    <section
+            id="result"
+            class="result-section">
+
+    </section>
+
+</div>
+
+<!-- ===============================
+        File Name Preview
+================================ -->
+
+<script>
+
+    document.getElementById("teacherFile").addEventListener("change",function(){
+
+        document.getElementById("teacherFileName").innerText=
+            this.files.length
+            ? this.files[0].name
+            : "No file selected";
+
+    });
+
+    document.getElementById("studentFile").addEventListener("change",function(){
+
+        document.getElementById("studentFileName").innerText=
+            this.files.length
+            ? this.files[0].name
+            : "No file selected";
+
+    });
+
+</script>
+<!-- ===============================
+        Main JavaScript
+================================ -->
+
+<script src="/js/app.js"></script>
+
+</body>
+
+</html>
