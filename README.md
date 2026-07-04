@@ -6,7 +6,7 @@ An AI-powered web application that compares **Teacher Study Material** with **St
 
 ## 📖 Project Overview
 
-The AI Learning Analysis Platform helps teachers and students understand learning progress by comparing uploaded documents. It extracts text from the uploaded files, analyzes them using an AI model, and generates a detailed learning analysis report.
+The AI Learning Analysis Platform helps teachers and students understand learning progress by comparing uploaded documents. It extracts text from uploaded files, analyzes them using the Groq AI model, and generates a detailed learning analysis report.
 
 The generated report includes:
 
@@ -61,8 +61,15 @@ The generated report includes:
 
 ## 📂 Project Structure
 
-```
+```text
 ai-learning-analysis-platform
+│
+├── docs
+│   ├── AI_Learning_Analysis_HLD.pdf
+│   ├── AI_Learning_Analysis_Test_Cases.xlsx
+│   ├── AI_Learning_Analysis_Test_Evidence.docx
+│   ├── Teacher_Notes.docx
+│   └── Student_Notes.docx
 │
 ├── src
 │   ├── main
@@ -81,6 +88,30 @@ ai-learning-analysis-platform
 
 ---
 
+## 📁 Documentation
+
+The **docs/** folder contains the project documentation:
+
+- 📄 High Level Design (HLD)
+- 📊 Test Cases
+- 📑 Test Evidence
+- 📘 Teacher Notes
+- 📗 Student Notes
+
+These documents describe the project architecture, testing approach, validation process, and sample learning materials used for testing.
+
+---
+
+## 🎥 Project Demo
+
+Watch the complete project demonstration here:
+
+**Google Drive:**
+
+https://drive.google.com/file/d/1UiFMiCH9uTQAsaQAyZQLpou_MbwUqCy8/view?usp=sharing
+
+---
+
 ## 📑 Supported File Types
 
 | File Type | Supported |
@@ -96,7 +127,7 @@ ai-learning-analysis-platform
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/AI-Learning-Analysis-Platform.git
+git clone https://github.com/Karthicckk0077/AI-Learning-Analysis-Platform.git
 ```
 
 ### 2. Open the project
@@ -107,7 +138,7 @@ Open the project using IntelliJ IDEA (or your preferred Java IDE).
 
 Open:
 
-```
+```text
 src/main/resources/application.properties
 ```
 
@@ -139,7 +170,7 @@ or run the Spring Boot application directly from IntelliJ.
 
 Open your browser and visit:
 
-```
+```text
 http://localhost:8080
 ```
 
